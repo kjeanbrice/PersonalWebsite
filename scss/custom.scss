@@ -1,0 +1,41 @@
+* {
+    /*border: 1px solid blue !important;*/
+    /*font-size: 16px;*/
+}
+
+
+/*Top Bar*/
+
+.top-bar {
+    .top-bar-left {
+        h4 {
+            color: $white;
+        }
+    }
+    .top-bar-center {
+        display: table;
+        margin: 0 auto;
+        .menu {
+            li {
+                a {
+                    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    font-family: "proxima-nova";
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 2px;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 1em;
+                    color: rgba(255,255,255,.8);            
+                }
+                a:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
