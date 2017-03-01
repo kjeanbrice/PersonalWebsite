@@ -1,17 +1,16 @@
 * {
-    /*border: 1px solid blue !important;*/
+   border: 1px solid blue !important;
     /*font-size: 16px;*/
 }
-
 
 
 /*-------BODY-------*/
 
 
-
-
-
 /*Top Bar*/
+
+
+
 .top-bar {
     .top-bar-left {
         h4 {
@@ -33,28 +32,108 @@
                     letter-spacing: 2px;
                     font-style: normal;
                     line-height: 1em;
-                    color: rgba(255,255,255,.8);            
+                    color: rgba(255, 255, 255, .8);
+                    transition: color 200ms ease-in-out;
                 }
-	
-				a:hover{
-					color:$primary;
-				}              
+                a:hover {
+                    color: $primary;
+                    transition: color 200ms ease-in-out;
+                }
             }
         }
     }
 }
 
-
-#contact{
-	border: 2px solid $white;
+#contact, #about-me {
+    border: 2px solid $white;
+    background: $black;
+    color: $white;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
 }
 
-#contact:hover{
-	background: $white;  
-	color: $black;
+#contact:hover, #about-me:hover{
+    background: $white;
+    color: $black;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.extra-padding{
+	padding: 10px;
 }
 
 
-#body-style{
-	background:$medium-gray;
+#body-style {
+    background: linear-gradient( rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)) //, url(../images/topimage.jpg);
+    /*-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	 background-size: cover;
+ 	background-repeat:no-repeat;
+	background-position: center center;*/
+}
+
+#landing-section {
+    background: linear-gradient( rgba(25, 25, 25, .6), rgba(25, 25, 25, .6)), url(../images/projects-image.jpg);
+    height: 100vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid $black;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#landing-text-area{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+    padding-bottom: 50px; 
+  }
+
+ #landing-text-top{
+ 	display: block;
+	font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+	letter-spacing: 0px;
+	text-transform: none;
+	font-family: "proxima-nova";
+	font-size: 70px;
+	line-height: 1em;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 700;
+	font-style: bold;
+	color: #FFF;
+ }
+
+ .center-text{
+ 	text-align: center;
+ }
+
+#landing-text-bottom{
+	font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	letter-spacing: 0px;
+	font-family: "adobe-garamond-pro";
+	font-size: 28px;
+	line-height: 1.5em;
+	text-transform: none;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-style: italic;
+	color: #fff;
+	margin: 20px auto;
+	-webkit-transform: translatez(0);
 }
