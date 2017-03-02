@@ -5,13 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website - Karl Jean-Brice</title>
+    <title>Karl Jean-Brice</title>
     <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body id="body-style">
     <!-- TOP BAR -->
-  
+    <div class="top-bar-container" data-sticky-container>
+        <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
             <div class="top-bar">
                 <div class="top-bar-center">
                     <ul class="menu">
@@ -23,26 +26,127 @@
                     </ul>
                 </div>
             </div>
-      
-    <div id="landing-section">
+        </div>
+    </div>
+    <section id="landing-section">
         <div id="landing-text-area">
             <div class="row">
                 <div class="center-text small-12 medium-12 large-12 columns">
-                    <span id = "landing-text-top" ><b>WELCOME</b></span>
-                    <span id = "landing-text-bottom">Take a few mintues and learn more about me</span>
+                    <span id="landing-text-top"><b>WELCOME</b></span>
+                    <span id="landing-text-bottom">Take a few mintues and learn more about me</span>
                     <br>
-                    <span><a id ="about-me" class ="extra-padding" href="#">Testing this</a></span>
+                    <ul class=" landing-padding landing-btn-area menu">
+                        <li><a class="btn-styles li-padding" id="about-me">Learn more</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <p>HELLO</p>
-    </div>
+    </section>
+    <section id="summary-section" class="background-color-gray">
+        <div class="summary-area-padding">
+            <div class="row">
+                <div class="center-text small-12 medium-12 large-12 columns h1-title-padding">
+                    <h1><span class = "h1-title">A brief summary</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-text small-6 medium-6 large-6 columns">
+                    <p><span class="summary-des">[IMAGE GOES HERE]</span></p>
+                </div>
+                <div class="left-text small-6 medium-6 large-6 columns">
+                    <p><span class="summary-des">Hello, my name is Karl Jean-Brice. I’m currently a senior at Stony Brook University pursuing my bachelor’s degree in Computer Science. I am very interested in computer science in general but my primary interests lie in software engineering and website development. When I’m not programming, I enjoy playing lacrosse, exercising, and competitive gaming. I initially created this website as a class project, but I am now using it to share the important aspects of my life with all of you! If you have any questions or comments, please feel free to contact me. I hope you enjoy your stay!</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills-section" class="background-color-lightgray">
+        <div class="summary-area-padding">
+            <div class="row">
+                <div class="center-text small-6 medium-6 large-6 columns">
+                    <h1><span class = "h1-title">Technologies</span></h1>
+                    <div>
+                        <span class="h2-title">Languages</span>
+                        <br>
+                        <p><span class="skills-item">Java&emsp;JavaScript&emsp;C&emsp;PHP&emsp;HTML5/CSS3</span></p>
+                    </div>
+                    <div>
+                        <span class="h2-title">Libraries and Frameworks</span>
+                        <br>
+                        <p><span class="skills-item">jQuery&emsp;Spring&emsp;Maven&emsp;Foundation 6&emsp;Bootstrap</span></p>
+                    </div>
+                    <div>
+                        <span class="h2-title">Databases</span>
+                        <br>
+                        <p><span class="skills-item">MySQL&emsp;Google Cloud Datastore</span></p>
+                    </div>
+                    <div>
+                        <span class="h2-title">Version Control</span>
+                        <br>
+                        <p><span class="skills-item">GIT&emsp;Subversion</span></p>
+                    </div>
+                </div>
+                <div class="left-text small-6 medium-6 large-6 columns">
+                    <h1><span class = "h1-title">Education</span></h1>
+                    <p><span class="summary-des">Currently on course to graduate from Stony Brook University with a BS in Computer Science in 2017.</span></p>
+                    <h1><span class = "h1-title">Courses</span></h1>
+                    <div class="left-text">
+                        <span class="h2-title">Algorithms</span> -
+                        <span class="skills-item">&nbsp;Dynamic Programming&emsp;Big O Analysis</span>
+                        <br>
+                        <span class="h2-title">Computer Science II</span> -
+                        <span class="skills-item">&nbsp;Java&emsp;Data Structures</span>
+                        <br>
+                        <span class="h2-title">Computer Science III</span> -
+                        <span class="skills-item">&nbsp;Design Patterns&emsp;Java&emsp;JavaFX</span>
+                        <br>
+                        <span class="h2-title">Operating Systems</span> -
+                        <span class="skills-item">&nbsp;Version Control&emsp;File Systems&emsp;CPU Scheduling&emsp;C Programming</span>
+                        <br>
+                        <span class="h2-title">Software Engineering</span> -
+                        <span class="skills-item">&nbsp;Software Design&emsp;Document Specification&emsp;Web technologies</span>
+                        <br>
+                        <span class="h2-title">Systems Fundamentals I</span> -
+                        <span class="skills-item">&nbsp;MIPS&emsp; Computer Architecture</span>
+                        <br>
+                        <span class="h2-title">Systems Fundamentals II</span> -
+                        <span class="skills-item">&nbsp;Version Control&emsp;Multi-Threaded Programming&emsp;C Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project-section" class="background-color-gray">
+        <div class="summary-area-padding">
+            <div class="row">
+                <div class="center-text small-12 medium-12 large-12 columns h1-title-padding">
+                    <h1><span class = "h1-title">Some of my projects</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-text small-6 medium-6 large-6 columns">
+                    <p><span class="summary-des">[IMAGE GOES HERE]</span></p>
+                </div>
+                <div class="left-text small-6 medium-6 large-6 columns">
+                    <p><span class="summary-des">Hello, my name is Karl Jean-Brice. I’m currently a senior at Stony Brook University pursuing my bachelor’s degree in Computer Science. I am very interested in computer science in general but my primary interests lie in software engineering and website development. When I’m not programming, I enjoy playing lacrosse, exercising, and competitive gaming. I initially created this website as a class project, but I am now using it to share the important aspects of my life with all of you! If you have any questions or comments, please feel free to contact me. I hope you enjoy your stay!</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
 </body>
+<footer>
+    <div class="top-bar">
+        <div class="top-bar-center">
+            <ul class="menu">
+                <li><a>Email: karl.jean-brice@stonybrook.edu</a></li>
+                <li><a>Phone: 516-972-5110</a></li>
+                <li><a>LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 </html>
