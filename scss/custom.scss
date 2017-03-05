@@ -58,8 +58,9 @@
 }
 
 #about-me {
-	padding: 17px;
+	padding: 15px;
     border: 2px solid $white;
+    background:none;
     color: $white;
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     transition: color 300ms ease-in-out, background 300ms ease-in-out;
@@ -67,15 +68,50 @@
 
 
 #about-me:hover {
-	padding: 17px;
+	padding: 15px;
     background: $white;
     color: $black;
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     transition: color 300ms ease-in-out, background 300ms ease-in-out;
 }
 
+#project-btn1,#project-btn2, #project-btn3 {
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    border: 2px solid $white;
+    background:none;
+    color: $white;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
 
 
+#project-btn1:hover, #project-btn2:hover, #project-btn3:hover {
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+    background: $white;
+    color: $black;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.project-btn-styles {
+
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    /*font-family: "proxima-nova";*/
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-style: normal;
+    line-height: 1em;
+    color: rgba(255, 255, 255, .8);
+}
 
 
 .btn-styles {
@@ -151,6 +187,24 @@
     color: #FFF;
 }
 
+
+#resume-heading-text {
+    display: block;
+    font-family: "Cormorant", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0px;
+    text-transform: none;
+    font-family: "Cormorant";
+    font-size: 35px;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-style: bold;
+    color: $black;
+}
+
 .center-text {
     text-align: center;
 }
@@ -210,6 +264,19 @@
 	font-weight: 800;
 	font-style: normal;
 	color:rgba(26,26,26,.9);
+}
+
+.h2-title-projects{
+	font-family: "Cormorant","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 45px;
+	font-family: "Cormorant";
+	font-size: 21px;
+	line-height: 1.6em;
+	text-transform: none;
+	letter-spacing: 0px;
+	font-weight: 800;
+	font-style: bold;
+	color:$white;
 }
 
 .h1-title-padding{
@@ -315,6 +382,48 @@ footer .top-bar {
 footer .top-bar ul
 {
 	background-color: #26262a;
+}
+
+
+.image-container{
+	position:relative;
+	border: 1px solid #26262a;
+
+}
+
+.image-overlay{
+    text-align: center;
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:100%;
+	background: linear-gradient(rgba(25, 25, 25,.5), rgba(25, 25, 25,.5));
+}
+
+.image-layer{
+	text-align: center;
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:100%;
+	background: linear-gradient(rgba(25, 25, 25,.8), rgba(25, 25, 25,.8));
+}
+
+
+
+
+
+.project-content-area{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.hide-element{
+	visibility:hidden;
+
 }
 
 
