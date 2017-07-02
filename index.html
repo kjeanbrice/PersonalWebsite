@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karl Jean-Brice</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
     <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
@@ -16,13 +17,19 @@
     <div class="top-bar-container" data-sticky-container>
         <div class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
             <div class="top-bar">
-                <div class="top-bar-center">
+                <div class="top-bar-left">
                     <ul class="menu">
-                        <li><a href="#landing-section" class="scroll-nav">Home</a></li>
-                        <li><a href="#summary-section" class="scroll-nav">About</a></li>
-                        <li><a href="#project-section" class="scroll-nav">Projects</a></li>
-                        <li><a href="#" data-open="resumeModal">Resume</a></li>
-                        <li><a href="#contact-section" class="scroll-nav">Contact</a></li>
+                        <li><img src="images/logo.png" alt="Logo" height="32" width="32"></li>
+                        <li><a href="javascript:void(0);" class="scroll-nav logo-name">Karl Jean-Brice</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li><a href="#landing-section" class="scroll-nav link">Home</a></li>
+                        <li><a href="#summary-section" class="scroll-nav link">About</a></li>
+                        <li><a href="#project-section" class="scroll-nav link">Projects</a></li>
+                        <li><a href="#" data-open="resumeModal" class="scroll-nav link">Resume</a></li>
+                        <li><a href="#contact-section" class="scroll-nav link">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +37,7 @@
     </div>
   
 
-    <div id="resumeModal" class="reveal" data-reveal data-animation-in="slide-in-down slow" data-animation-out="slide-out-up slow">
+    <div id="resumeModal" class="reveal large" data-reveal data-animation-in="slide-in-down fast" data-animation-out="slide-out-up fast">
         <div class = "center-text">
           <h3 id="resume-heading-text">Resume</h3>
           <hr>
@@ -47,11 +54,11 @@
         <div id="landing-text-area">
             <div class="row">
                 <div class="center-text small-12 medium-12 large-12 columns">
-                    <span id="landing-text-top"><b>WELCOME</b></span>
+                    <span id="landing-text-top"><b>Welcome</b></span>
                     <span id="landing-text-bottom">Take a few mintues and learn more about me</span>
                     <br>
                     <ul class=" landing-padding landing-btn-area menu">
-                        <li><a href="#skills-section" class="btn-styles li-padding scroll-nav" id="about-me">Learn more</a></li>
+                        <li><a href="#summary-section" class="btn-styles li-padding scroll-nav" id="about-me">Learn more</a></li>
                     </ul>
                 </div>
             </div>
