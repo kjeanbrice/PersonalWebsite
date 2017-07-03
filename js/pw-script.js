@@ -20,13 +20,13 @@ $(document).ready(function () {
         if(hidden_element.is(":visible")){
         	hidden_element.hide();
         }
-        hidden_element.fadeIn(600);
+        hidden_element.fadeIn(500);
     });
 
      $('body').on('mouseleave', '.image-container', function (e) {
         var image_layer = $(this);
         var hidden_element = image_layer.find('div.image-layer');
-        hidden_element.fadeOut(600); 
+        hidden_element.fadeOut(500);
     });
 
 });

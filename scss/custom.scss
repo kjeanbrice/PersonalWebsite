@@ -116,7 +116,9 @@
 
 #project-btn1,
 #project-btn2,
-#project-btn3 {
+#project-btn3,
+#project-btn4,
+#project-btn5 {
     padding-left: 23px;
     padding-right: 23px;
     padding-top: 12px;
@@ -130,7 +132,9 @@
 
 #project-btn1:hover,
 #project-btn2:hover,
-#project-btn3:hover {
+#project-btn3:hover,
+#project-btn4:hover,
+#project-btn5:hover {
     padding-left: 23px;
     padding-right: 23px;
     padding-top: 12px;
@@ -169,6 +173,10 @@
 
 .extra-padding {
     padding: 10px;
+}
+
+.extra-padding-top{
+    padding-top:65px;
 }
 
 #body-style {
@@ -249,6 +257,18 @@
     text-align: center;
 }
 
+#about-me-img,#projects-img, #skills-img,#education-img{
+    height:125px;
+    width:125px;
+    transition: height 300ms ease-in-out, width 300ms ease-in-out;
+}
+
+#about-me-img:hover, #projects-img:hover, #skills-img:hover,#education-img:hover{
+    height:135px;
+    width:135px;
+    transition: height 300ms ease-in-out, width 300ms ease-in-out;
+}
+
 #landing-text-bottom {
     font-family: "Cormorant", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -320,7 +340,11 @@
 }
 
 .h1-title-padding {
-    padding-bottom: 15px;
+    padding-bottom: 95px;
+}
+
+.h2-title-padding {
+    padding-bottom: 60px;
 }
 
 .summary-des {
@@ -369,6 +393,10 @@
 
 .background-color-darkgray {
     background: $dark-gray;
+}
+
+.background-color-mediumgray {
+    background: $medium-gray;
 }
 
 .center-text {
@@ -452,6 +480,34 @@ footer .top-bar ul {
     transform: translate(-50%, -50%);
 }
 
+
+#view-resume {
+    padding: 11px 33px;
+    border: 2px solid rgba(255, 255, 255, .8);
+    background:none;
+    color: rgba(255, 255, 255, .8);
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    margin-right: 5px;
+}
+
+#view-resume-hidden{
+    padding: 11px 33px;
+    border: 2px solid rgba(255, 255, 255, .8);
+    background:none;
+    color: rgba(255, 255, 255, .8);
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    visibility: hidden;
+}
+
+#view-resume:hover{
+    padding: 11px 33px;
+    background:white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:black;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
 .hide-element {
     visibility: hidden;
 }
